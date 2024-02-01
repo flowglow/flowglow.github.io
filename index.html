@@ -3,29 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designer Portfolio</title>
-    <!-- Include the dotLottie player script -->
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        #lottie-container {
-            width: 300px; /* Adjust width as needed */
-            height: 300px; /* Adjust height as needed */
-            margin: 0 auto;
-        }
-    </style>
+    <title>Motion is loading ...</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include CSS file -->
 </head>
 <body>
 
@@ -33,13 +12,8 @@
         <h1>Designer Portfolio</h1>
     </header>
 
-    <!-- Lottie Animation Container -->
-    <div id="lottie-container">
-        <!-- Embedded Lottie animation -->
-        <dotlottie-player src="https://lottie.host/387b7402-b0ce-4229-ab08-e03b5103adab/GrNciw9nUz.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></dotlottie-player>
-    </div>
+    <div id="lottie-container"></div>
 
-    <!-- Your content goes here -->
     <div>
         <h2>About Me</h2>
         <p>Write a brief introduction about yourself here.</p>
@@ -51,5 +25,6 @@
         <p>Include your contact information here.</p>
     </div>
 
+    <script src="script.js" defer></script> <!-- Include JS file -->
 </body>
 </html>
