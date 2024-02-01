@@ -1,4 +1,4 @@
-import { Lottie } from '@lottiefiles/lottie-js'; // Import Lottie library
+//import { Lottie } from '@lottiefiles/lottie-js'; // Import Lottie library
 
 const animation = Lottie.loadAnimation({
     container: document.getElementById('lottie-container'),
