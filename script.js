@@ -4,7 +4,7 @@ const animation = lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'subfolder/animation.json' // Path to your Lottie animation JSON file
+    path: 'lottie_anims/loading.json' // Path to your Lottie animation JSON file
 });
 
 // Additional JavaScript code for your website can be added here
