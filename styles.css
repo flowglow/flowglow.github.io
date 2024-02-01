@@ -5,8 +5,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     padding: 20px;
     text-align: center;
 }
@@ -21,4 +21,9 @@ h2 {
     color: #333;
     font-size: 24px;
     margin-top: 40px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
 }
