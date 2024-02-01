@@ -1,6 +1,4 @@
-//import { Lottie } from '@lottiefiles/lottie-js'; // Import Lottie library
-
-const animation = Lottie.loadAnimation({
+var animation = bodymovin.loadAnimation({
     container: document.getElementById('lottie-container'),
     renderer: 'svg',
     loop: true,
