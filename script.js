@@ -43,4 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
             bodyScrollLock.enableBodyScroll(lottieAnimation);
         }
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> dd69d4b14610048abfa1469d84cc5c7e42e2401e
