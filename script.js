@@ -8,9 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
         path: 'lottie_anims/loading.json'
     });
 
-    // Define the scroll threshold
-    const scrollThreshold = 100;
-
     // Function to handle scroll events
     function handleScroll() {
         // Get the Lottie animation element
@@ -24,13 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Apply the opacity to the Lottie animation
         lottieAnimation.style.opacity = opacity;
+        instagramVideo.style.opacity = 1 - opacity;
 
-        // Adjust opacity and visibility based on scroll position
-        if (scrollPosition > (window.innerHeight / 2)) {
-            instagramVideo.classList.remove("hidden");
-        } else {
-            instagramVideo.classList.add("hidden");
-        }
     }
 
     // Add scroll event listener
