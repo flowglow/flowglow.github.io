@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (isInViewport) {
             if (!animation) {
-                animation = lottie.loadAnimation({
+                animation = bodymovin.loadAnimation({
                     container: lottieAnimation,
                     renderer: 'svg',
                     loop: false,
