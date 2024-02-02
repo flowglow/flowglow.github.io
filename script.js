@@ -19,14 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
         let instagramVideo = document.getElementById("instagram-video");
         // Get the current scroll position
         let scrollPosition = window.scrollY;
-        let windowHeight = window.innerHeight;
+
+        let opacity = 1 - (scrollPosition / window.innerHeight); // Adjust this formula as needed
+
+        // Apply the opacity to the Lottie animation
+        lottieAnimation.style.opacity = opacity;
 
         // Adjust opacity and visibility based on scroll position
-        if (scrollPosition > windowHeight) {
-            lottieAnimation.style.opacity = "0";
+        if (scrollPosition > (window.innerHeight / 2)) {
             instagramVideo.classList.remove("hidden");
         } else {
-            lottieAnimation.style.opacity = "1";
             instagramVideo.classList.add("hidden");
         }
     }
