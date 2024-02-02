@@ -18,10 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Get the Instagram video element
         let instagramVideo = document.getElementById("instagram-video");
         // Get the current scroll position
-        let scrollPosition = window.scrollY || window.pageYOffset;
+        let scrollPosition = window.scrollY;
+        let windowHeight = window.innerHeight;
 
         // Adjust opacity and visibility based on scroll position
-        if (scrollPosition > scrollThreshold) {
+        if (scrollPosition > windowHeight) {
             lottieAnimation.style.opacity = "0";
             instagramVideo.classList.remove("hidden");
         } else {
