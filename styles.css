@@ -24,8 +24,8 @@ p {
 }
 
 #lottie-animation {
-    /*width: 300px;*/ /* Adjust size as needed */
-    /*height: 300px;*/ /* Adjust size as needed */
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
     position: fixed; /* Fix the position of the Lottie animation */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
@@ -34,8 +34,8 @@ p {
 }
 
 #instagram-video {
-    /*width: 100%;*/ /* Adjust size as needed */
-    /*max-width: 600px;*/ /* Adjust size as needed */
+    width: 100%; /* Adjust size as needed */
+    max-width: 300px; /* Adjust size as needed */
     position: fixed; /* Fix the position of the Instagram video */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
