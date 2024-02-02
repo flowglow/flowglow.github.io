@@ -4,6 +4,7 @@ const fadeSpeed = 0.05; // Adjust as needed
 
 // Function to handle scrolling and animations
 function handleScroll() {
+    console.log("Scrolling...");
     const lottieAnimation = document.getElementById('lottie-animation');
     const instagramEmbed = document.getElementById('instagram-embed');
     const lottieOffset = lottieAnimation.offsetTop - window.innerHeight;
