@@ -27,3 +27,14 @@ h2 {
 p {
     text-align: center;
 }
+
+.instagram-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+.instagram-video iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
