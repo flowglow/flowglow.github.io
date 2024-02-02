@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     renderer: 'svg',
                     loop: false,
                     autoplay: true,
-                    path: 'lottie.json'
+                    path: 'lottie_anims/loading.json'
                 });
             }
             animation.setSpeed(visibility); // Adjust animation speed based on visibility
@@ -43,8 +43,4 @@ document.addEventListener('DOMContentLoaded', function () {
             bodyScrollLock.enableBodyScroll(lottieAnimation);
         }
     });
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> dd69d4b14610048abfa1469d84cc5c7e42e2401e
