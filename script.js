@@ -1,32 +1,46 @@
-// Define variables for animation speed
-const increaseSpeed = 0.05; // Adjust as needed
-const fadeSpeed = 0.05; // Adjust as needed
-
-// Function to handle scrolling and animations
-function handleScroll() {
+document.addEventListener('DOMContentLoaded', function () {
     const lottieAnimation = document.getElementById('lottie-animation');
-    const instagramEmbed = document.getElementById('instagram-embed');
-    const lottieOffset = lottieAnimation.offsetTop - window.innerHeight;
-    const instagramOffset = instagramEmbed.offsetTop - window.innerHeight;
+    let animation = null;
 
-    if (window.scrollY > lottieOffset) {
-        lottieAnimation.style.transform = `scale(${1 + increaseSpeed})`;
-        lottieAnimation.style.opacity = `${1 - fadeSpeed}`;
+    function handleScroll() {
+        const windowHeight = window.innerHeight;
+        const lottieTop = lottieAnimation.offsetTop;
+        const lottieHeight = lottieAnimation.offsetHeight;
+        const scrollPosition = window.scrollY;
+
+        const isInViewport = (lottieTop < scrollPosition + windowHeight) && (lottieTop + lottieHeight > scrollPosition);
+        const visibility = (windowHeight - (scrollPosition - lottieTop)) / windowHeight;
+
+        if (isInViewport) {
+            if (!animation) {
+                animation = lottie.loadAnimation({
+                    container: lottieAnimation,
+                    renderer: 'svg',
+                    loop: false,
+                    autoplay: true,
+                    path: 'lottie.json'
+                });
+            }
+            animation.setSpeed(visibility); // Adjust animation speed based on visibility
+            lottieAnimation.style.opacity = visibility; // Fade in/out based on visibility
+        } else {
+            if (animation) {
+                animation.stop();
+                animation = null;
+            }
+            lottieAnimation.style.opacity = 0; // Hide animation when not in viewport
+        }
     }
 
-    if (window.scrollY > instagramOffset) {
-        instagramEmbed.style.opacity = `${1}`;
-    }
-}
+    window.addEventListener('scroll', handleScroll);
 
-// Load the animation
-const animation = lottie.loadAnimation({
-    container: document.getElementById('lottie-animation'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'lottie_anims/loading.json' // Path to your Lottie animation JSON file
+    // Prevent scrolling of body when the lottie animation is in viewport
+    bodyScrollLock.disableBodyScroll(lottieAnimation);
+
+    // Re-enable scrolling when animation is out of viewport
+    window.addEventListener('resize', function () {
+        if (!animation) {
+            bodyScrollLock.enableBodyScroll(lottieAnimation);
+        }
+    });
 });
-
-// Add scroll event listener to handle animations
-window.addEventListener('scroll', handleScroll);
