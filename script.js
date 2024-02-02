@@ -1,46 +1,35 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const lottieAnimation = document.getElementById('lottie-animation');
-    let animation = null;
+document.addEventListener("DOMContentLoaded", function () {
+    // Load the Lottie animation
+    const animation = lottie.loadAnimation({
+        container: document.getElementById('lottie-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'lottie_anims/loading.json'
+    });
 
+    // Define the scroll threshold
+    const scrollThreshold = 100;
+
+    // Function to handle scroll events
     function handleScroll() {
-        const windowHeight = window.innerHeight;
-        const lottieTop = lottieAnimation.offsetTop;
-        const lottieHeight = lottieAnimation.offsetHeight;
-        const scrollPosition = window.scrollY;
+        // Get the Lottie animation element
+        let lottieAnimation = document.getElementById("lottie-animation");
+        // Get the Instagram video element
+        let instagramVideo = document.getElementById("instagram-video");
+        // Get the current scroll position
+        let scrollPosition = window.scrollY || window.pageYOffset;
 
-        const isInViewport = (lottieTop < scrollPosition + windowHeight) && (lottieTop + lottieHeight > scrollPosition);
-        const visibility = (windowHeight - (scrollPosition - lottieTop)) / windowHeight;
-
-        if (isInViewport) {
-            if (!animation) {
-                animation = bodymovin.loadAnimation({
-                    container: lottieAnimation,
-                    renderer: 'svg',
-                    loop: false,
-                    autoplay: true,
-                    path: 'lottie_anims/loading.json'
-                });
-            }
-            animation.setSpeed(visibility); // Adjust animation speed based on visibility
-            lottieAnimation.style.opacity = visibility; // Fade in/out based on visibility
+        // Adjust opacity and visibility based on scroll position
+        if (scrollPosition > scrollThreshold) {
+            lottieAnimation.style.opacity = "0";
+            instagramVideo.classList.remove("hidden");
         } else {
-            if (animation) {
-                animation.stop();
-                animation = null;
-            }
-            lottieAnimation.style.opacity = 0; // Hide animation when not in viewport
+            lottieAnimation.style.opacity = "1";
+            instagramVideo.classList.add("hidden");
         }
     }
 
-    window.addEventListener('scroll', handleScroll);
-
-    // Prevent scrolling of body when the lottie animation is in viewport
-    bodyScrollLock.disableBodyScroll(lottieAnimation);
-
-    // Re-enable scrolling when animation is out of viewport
-    window.addEventListener('resize', function () {
-        if (!animation) {
-            bodyScrollLock.enableBodyScroll(lottieAnimation);
-        }
-    });
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
 });

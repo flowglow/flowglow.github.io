@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Prevent scrolling on the body */
 }
 
 header {
@@ -23,20 +24,25 @@ p {
 }
 
 #lottie-animation {
-    width: 300px; /* Adjust size as needed */
-    height: 300px; /* Adjust size as needed */
-    margin: 0 auto; /* Center horizontally */
-    opacity: 1; /* Initially fully visible */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity changes */
+    /*width: 300px;*/ /* Adjust size as needed */
+    /*height: 300px;*/ /* Adjust size as needed */
+    position: fixed; /* Fix the position of the Lottie animation */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the element */
+    z-index: 1; /* Ensure it's above other content */
 }
 
 #instagram-video {
-    width: 100%; /* Adjust size as needed */
-    max-width: 600px; /* Adjust size as needed */
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; /* Center horizontally */
-    opacity: 0; /* Initially invisible */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity changes */
+    /*width: 100%;*/ /* Adjust size as needed */
+    /*max-width: 600px;*/ /* Adjust size as needed */
+    position: fixed; /* Fix the position of the Instagram video */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the element */
+    z-index: 1; /* Ensure it's above other content */
+}
+
+.hidden {
+    display: none; /* Hide the Instagram video initially */
 }
