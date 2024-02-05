@@ -1,15 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 20px;
     padding: 0;
 }
 
 .header {
+    display: flex; 
     text-align: center;
     margin-top: 50px; /* Adjust as needed */
+    justify-content: center;
 }
 
 .word {
+    font-family: 'Indie Flower', cursive;
+    background-color: white;
+    color: black;
+    margin: 0 5px;
     display: flex;
     justify-content: center;
 }
@@ -17,6 +23,12 @@ body {
 .word h2 {
     margin: 0;
     font-size: 24px;
+}
+
+.motion-letters {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Each letter takes up one fraction */
+    justify-content: center;
 }
 
 #lottie-animation {
@@ -31,8 +43,13 @@ body {
 }
 
 #instagram-video {
-    display: inline-block;
-    margin-top: 20px; /* Adjust as needed */
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#instaFrame {
+    width: calc(100vw - 40px);
+    max-width: 600px;
 }
 
 
