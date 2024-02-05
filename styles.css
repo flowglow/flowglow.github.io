@@ -2,54 +2,52 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     padding: 0;
+    background-color: #121212;
 }
 
 .header {
-    display: flex; 
+    display: flex;
     text-align: center;
-    margin-top: 50px; /* Adjust as needed */
+    font-family: 'Indie Flower';
+    font-size: 2rem;
+    height: 2rem;
     justify-content: center;
 }
 
 .word {
-    font-family: 'Indie Flower', cursive;
-    background-color: white;
-    color: black;
+    color: #ffffffda;
+    mix-blend-mode: screen;
     margin: 0 5px;
     display: flex;
     justify-content: center;
 }
 
-.word h2 {
-    margin: 0;
-    font-size: 24px;
-}
-
 .motion-letters {
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* Each letter takes up one fraction */
+    text-shadow: 0 0 0.4rem #ffffffda, 0 0 0.5rem #ffffffda, 0 0 0 0.25rem #ffffffda;
     justify-content: center;
 }
 
 #lottie-animation {
-    width: 300px;
-    height: 300px;
+    width: calc(100vw - 40px);
+    max-width: 300px;
+    justify-content: center;
     margin: 50px auto 0; /* Centered below the header */
-}
-
-#about-the-motion {
-    text-align: center;
-    margin-top: 50px; /* Adjust as needed */
+    margin-top: 100px;
 }
 
 #instagram-video {
+    text-align: center;
     margin: 20px auto;
+    margin-top: 100px;
     overflow: hidden;
+    display: none;
 }
 
 #instaFrame {
     width: calc(100vw - 40px);
-    max-width: 600px;
+    max-width: 400px;
 }
 
 
