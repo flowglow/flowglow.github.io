@@ -1,56 +1,45 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    overflow: hidden; /* Prevent scrolling on the body */
 }
 
-header {
-    background-color: #fff;
-    color: #333;
-    padding: 20px;
+.header {
     text-align: center;
+    margin-top: 50px; /* Adjust as needed */
 }
+
+.word {
+    display: flex;
+    justify-content: center;
+}
+
+.word h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#lottie-animation {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto 0; /* Centered below the header */
+}
+
+#about-the-motion {
+    text-align: center;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+#instagram-video {
+    display: inline-block;
+    margin-top: 20px; /* Adjust as needed */
+}
+
 
 h2 {
-    color: #333;
-    font-size: 24px;
-    margin-top: 40px;
     text-align: center;
 }
 
 p {
     text-align: center;
-}
-
-#lottie-animation {
-    width: 300px; /* Adjust size as needed */
-    height: 300px; /* Adjust size as needed */
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    /*position: fixed; /* Fix the position of the Lottie animation */
-    /*top: 50%; /* Center vertically */
-    /*left: 50%; /* Center horizontally */
-    /*transform: translate(-50%, -50%);*/ /* Center the element */
-    /*z-index: 1;*/ /* Ensure it's above other content */
-    opacity: 1;
-}
-
-#instagram-video {
-    width: 100%; /* Adjust size as needed */
-    max-width: 300px; /* Adjust size as needed */
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    /*position: fixed;*/ /* Fix the position of the Instagram video */
-    /*top: 50%;*/ /* Center vertically */
-    /*left: 50%;*/ /* Center horizontally */
-    /*transform: translate(-50%, -50%);*/ /* Center the element */
-    /*z-index: 1;*/ /* Ensure it's above other content */
-    opacity: 0;
-}
-
-.hidden {
-    display: none; /* Hide the Instagram video initially */
 }

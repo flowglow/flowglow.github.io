@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /* overflow: hidden; */ /* Prevent scrolling on the body */
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    width: min(50%, 20rem);
+    background-color: #fff;
+    /* padding: 20px; */
+    /* text-align: center; */
+}
+
+.word {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.motion-word{
+    display: grid;
+    place-content: center;
+}
+
+.letter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.lottie-animation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    opacity: 1;
+}
+
+.instagram-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    max-width: 300px; /* Adjust size as needed */
+    opacity: 1;
+}
+
+.hidden {
+    display: none; /* Hide the Instagram video initially */
+}
