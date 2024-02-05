@@ -29,6 +29,10 @@ body {
     justify-content: center;
 }
 
+#loading-word {
+    font-size: 1rem;
+}
+
 #lottie-animation {
     width: calc(100vw - 40px);
     max-width: 300px;
