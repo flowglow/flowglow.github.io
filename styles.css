@@ -83,9 +83,9 @@ nav{
 
 .vimeo-group{
     position: relative;
-    margin: calc(var(--metric-box-spacing) * 2) 0 var(--metric-box-spacing);
-    max-width: var(--max-container-width-desktop);
-    height: auto;
+    margin: var(--metric-box-spacing) 0;
+    max-width: 500px;
+    display: inline-block;
 }
 
 .vimeo-container {
