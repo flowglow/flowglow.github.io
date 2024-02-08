@@ -1,51 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading the motion...</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kirang Haerang|Indie Flower|Rye|Amatic SC|Bangers|Fredericka the Great|Bungee Inline">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <title>Wanna motion</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
+    <link rel='stylesheet' href='main_styles.css'/>
+  </head>
+  <body>
+        <nav>
+            <ul class="nav-links"> 
+                <a href="#">Works</a>
+                <a href="#">About</a> 
+                <a href="#">Contact</a>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
 
-    <div class="header">
-        <div class="word" id="loading-word">
-            <h2>loading</h2>
+        <div class="header">
+            Hi, I am Dashasha,<br/>a
+            <span style="text-decoration: line-through;">cat mom</span>
+            <span style="color: #EA5857; "> Motion</span>
+            <span style="color: #F4B15D; ">Designer</span>
         </div>
-        <div class="word" id="the-word">
-            <h2>THE</h2>
+
+        <div class="vimeo-group">
+            <img id="samsam03" src="img/samsam_03.png">
+            <img id="kiki06" src="img/kiki_06.png">
+            <div class="vimeo-container">
+                <div class='vimeo-wrapper'>
+                    <!-- <iframe src='https://player.vimeo.com/video/470613149' id="vimeo-reel" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> -->
+                    <img class="vimeo-reel" src="https://via.placeholder.com/856x469" />
+                </div>
+            </div>
         </div>
-        <div class="word" id="motion-word">
-            <h2 class="letter">M</h2>
-            <h2 class="letter">O</h2>
-            <h2 class="letter">T</h2>
-            <h2 class="letter">I</h2>
-            <h2 class="letter">O</h2>
-            <h2 class="letter">N</h2>
-        </div>
 
-    </div>
+        <section>
+            <h2>Featured Works</h2>
+            <div class="featured">
+                <div class="featured-img">
+                    <img src="img/jelly_fish.png" alt="Jellyfish" />
+                </div>
+                <div class="featured-descr">
+                    <h3>Jellyfish animation</h3>
+                    <div class="tags">
+                        <div class="year-tag" data-value="2023">2023</div>
+                        <span class="software-tag">Procreate</span>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <p>Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <div class="featured">
+                <div class="featured-img">
+                    <img src="img/abstract.png" alt="Abstract Composition" />
+                </div>
+                <div class="featured-descr">
+                    <h3>Abstract Composition and Cloth simulation</h3>
+                    <div class="tags">
+                        <div class="year-tag" data-value="2024">2024</div>
+                        <span class="software-tag">Blender</span>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <p>Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <div class="featured">
+                <div class="featured-img">
+                    <img src="img/procreate.png" alt="Dreams" />
+                </div>
+                <div class="featured-descr">
+                    <h3>Dreams animation</h3>
+                    <div class="tags">
+                        <div class="year-tag" data-value="2024">2024</div>
+                        <span class="software-tag">Procreate Dreams</span>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <p>Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </section>
 
-    <div id="lottie-animation"></div>
+        <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="main_script.js" defer></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script> -->
 
-    <div id="instagram-video">
-        <iframe src="https://www.instagram.com/p/CHiTQa4HqLL/embed?autoplay=1" id="instaFrame" alt="" width="640" height="720" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-    </div>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>¯\_(ツ)_/¯</p>
-    </section>
-
-    <footer>
-        <p>******************</p>
-    </footer>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
-    <script src="script.js" defer></script>
-
-</body>
+  </body>
 </html>
