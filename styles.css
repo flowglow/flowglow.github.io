@@ -148,6 +148,11 @@ nav{
     max-width: var(--max-container-width-desktop);
     display: flex;
     border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.featured:hover {
+    background-color: lightgray;
 }
 
 .featured-img {
