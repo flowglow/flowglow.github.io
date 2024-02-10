@@ -3,14 +3,23 @@
     --color-off-white: #f3f4f4;
     --metric-box-spacing: 1rem;
     --max-image-width: 200px;
-    --max-container-width-desktop: 1200px;
+    --max-container-width-desktop: 1000px;
     --red-logo: #EC565A;
     --orange-logo: #F4B15D;
     --background-color: #FFFEFC;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
+}
+
+.content {
+    max-width: var(--max-container-width-desktop);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    object-fit: contain;
 }
 
 body {
@@ -32,53 +41,58 @@ p {
 
 h2 {
     margin: var(--metric-box-spacing);
-    color:#21243D;
+    color: #21243D;
 }
 
 h3 {
-    color:#21243D;
+    color: #21243D;
 }
 
-nav{
+nav {
     /* background: #333; */
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     color: var(--red-logo);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .nav-links {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     width: 50%;
     text-transform: uppercase;
     z-index: 10;
 }
-.nav-links a{
+
+.nav-links a {
     display: block;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--red-logo);
-    border-bottom:2px solid transparent;
-    transition:0.5s ease;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s ease;
     transform: translateX(0%);
 }
-.nav-links a:hover{
-    color:var(--orange-logo);
+
+.nav-links a:hover {
+    color: var(--orange-logo);
     letter-spacing: 5px;
 }
-.burger{
+
+.burger {
     display: none;
     cursor: pointer;
     z-index: 1;
     margin-left: auto;
 }
-.burger div{
+
+.burger div {
     width: 25px;
     height: 3px;
     background: var(--red-logo);
     margin: 5px;
-    transition:all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .header {
@@ -88,7 +102,7 @@ nav{
     margin: var(--metric-box-spacing);
 }
 
-.vimeo-group{
+.vimeo-group {
     position: relative;
     margin: var(--metric-box-spacing);
     margin-right: 3rem;
@@ -108,6 +122,7 @@ nav{
     height: 0;
     max-width: 100%;
     overflow: hidden;
+
     iframe {
         margin: var(--metric-box-spacing);
         border-radius: 20px;
@@ -212,11 +227,13 @@ nav{
     }
 
     .featured-img {
-        margin-bottom: 0; /* Remove margin bottom */
+        margin-bottom: 0;
+        /* Remove margin bottom */
     }
 
     .featured-descr {
-        flex: 1 1 40%; /* Adjusted width for content */
+        flex: 1 1 40%;
+        /* Adjusted width for content */
     }
 }
 
@@ -232,68 +249,80 @@ nav{
     }
 }
 
-@media only screen and (max-width: 760px){
-    nav{
+@media only screen and (max-width: 760px) {
+    nav {
         justify-content: space-between;
         padding: 0 5vw;
-   }
-   .nav-links{
+    }
+
+    .nav-links {
         position: absolute;
         right: 0;
-        top:8vh;
-        min-height:25vh;
+        top: 8vh;
+        min-height: 25vh;
         background: var(--background-color);
         display: flex;
         flex-direction: column;
-        align-items: center;   
+        align-items: center;
         width: 30%;
         margin: 0;
         padding: 0;
         transform: translateX(100%);
-        transition:All 0.5s ease-in;
-   }
-   .nav-links a{
-    opacity: 0;
-  
-   }
-   .burger{
-    display: block;
-   }
+        transition: All 0.5s ease-in;
+    }
+
+    .nav-links a {
+        opacity: 0;
+
+    }
+
+    .burger {
+        display: block;
+    }
 }
- @media only screen and (max-width: 640px){
-   nav{
+
+@media only screen and (max-width: 640px) {
+    nav {
         justify-content: space-between;
         padding: 0 5vw;
-   }
+    }
 }
-.nav-active{
+
+.nav-active {
     transform: translateX(0);
 }
- @media only screen and (max-width: 460px){
-   .nav-links{
+
+@media only screen and (max-width: 460px) {
+    .nav-links {
         width: 100%;
-        transition:All 0.5s ease;
-   }
+        transition: All 0.5s ease;
+    }
 }
-.nav-active{
+
+.nav-active {
     transform: translateX(0);
 }
-@keyframes navLinkFade{
-   from{
-     opacity: 0;
-     transform: translateX(50px);
-   }
-   to{
-     opacity: 1;
-     transform: translateX(0);
-   }
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px );
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
-.toggle .line2{
+
+.toggle .line2 {
     opacity: 0;
 }
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px );
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }

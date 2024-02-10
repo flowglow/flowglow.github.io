@@ -13,13 +13,14 @@
     max-width: var(--max-image-width);
     margin-left: auto;
     margin-right: auto;
-    width:100%;
+    width: 100%;
     object-fit: contain;
-  }
+}
 
-html, body {
+html,
+body {
     overflow-x: hidden;
-    width:100%;
+    width: 100%;
 }
 
 body {
@@ -40,12 +41,12 @@ p {
 }
 
 h2 {
-    color:#21243D;
+    color: #21243D;
 }
 
 h3 {
     margin: var(--metric-box-spacing);
-    color:#21243D;
+    color: #21243D;
 }
 
 .header {
