@@ -90,13 +90,13 @@ nav{
 
 .vimeo-group{
     position: relative;
-    margin: var(--metric-box-spacing) 0;
+    margin: var(--metric-box-spacing);
+    margin-right: 3rem;
     margin-top: 15%;
     max-width: 1000px;
 }
 
 .vimeo-container {
-    /* margin: var(--metric-box-spacing); */
     display: flex;
     align-items: center;
     justify-content: center;
