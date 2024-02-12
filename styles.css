@@ -109,7 +109,6 @@ nav {
     margin-right: 3rem;
     margin-top: 15%;
     margin-bottom: 10%;
-    max-width: 1000px;
 }
 
 .header {
@@ -300,11 +299,10 @@ nav {
 
     .vimeo-group {
         position: relative;
-        margin: var(--metric-box-spacing);
+        margin-left: 0;
         margin-right: 2rem;
         margin-top: 15%;
         margin-bottom: 15%;
-        max-width: 1000px;
     }
 
     .header {
