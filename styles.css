@@ -307,6 +307,7 @@ nav {
     }
 
     .header {
+        font-size: 1.5rem;
         left: 0%; /* Position at the center */
         bottom: auto; /* Reset bottom */
     }
@@ -329,6 +330,10 @@ nav {
     .nav-links {
         width: 100%;
         transition: All 0.5s ease;
+    }
+
+    .header {
+        font-size: 1.0rem;
     }
 }
 
