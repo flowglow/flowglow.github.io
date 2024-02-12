@@ -113,6 +113,7 @@ nav {
 }
 
 .header {
+    flex-grow: 1;
     position: absolute;
     top: calc(-10% - var(--metric-box-spacing));
     transform: translateY(-50%); 
@@ -308,7 +309,7 @@ nav {
 
     .header {
         font-size: 1.5rem;
-        left: 0%; /* Position at the center */
+        left: 5%; /* Position at the center */
         bottom: auto; /* Reset bottom */
     }
 
@@ -333,7 +334,8 @@ nav {
     }
 
     .header {
-        font-size: 1.0rem;
+        left: 5%;
+        font-size: 1.2rem;
     }
 }
 
