@@ -41,6 +41,7 @@ p {
 
 h2 {
     margin: var(--metric-box-spacing);
+    margin-bottom: 0px;
     color: #21243D;
 }
 
@@ -107,7 +108,15 @@ nav {
     margin: var(--metric-box-spacing);
     margin-right: 3rem;
     margin-top: 15%;
+    margin-bottom: 10%;
     max-width: 1000px;
+}
+
+.header {
+    position: absolute;
+    top: calc(-10% - var(--metric-box-spacing));
+    transform: translateY(-50%); 
+    left: 22%;
 }
 
 .vimeo-container {
@@ -157,7 +166,7 @@ nav {
 #kiki06 {
     position: absolute;
     top: -15%;
-    right: 0;
+    right: -10%;
     height: 60%;
     margin-right: -5%;
     z-index: -10;
@@ -167,6 +176,7 @@ nav {
 .featured {
     /* background-color: var(--color-off-white); */
     margin: var(--metric-box-spacing);
+    margin-top: 0px;
     padding: var(--metric-box-spacing);
     max-width: var(--max-container-width-desktop);
     display: flex;
@@ -285,6 +295,29 @@ nav {
     nav {
         justify-content: space-between;
         padding: 0 5vw;
+    }
+
+    .vimeo-group {
+        position: relative;
+        margin: var(--metric-box-spacing);
+        margin-right: 2rem;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        max-width: 1000px;
+    }
+
+    .header {
+        left: 0%; /* Position at the center */
+        bottom: auto; /* Reset bottom */
+    }
+
+    #samsam03 {
+        top: auto;
+        bottom: calc(-50% + var(--metric-box-spacing));
+        left: 50%;
+        transform: translateX(-50%);
+        height: 80%;
+        z-index: -10;
     }
 }
 

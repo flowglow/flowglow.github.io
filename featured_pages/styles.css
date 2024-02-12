@@ -97,3 +97,7 @@ h3 {
     margin-top: var(--metric-box-spacing);
     margin-bottom: var(--metric-box-spacing);
 }
+
+#back-button{
+    cursor: pointer;
+}
