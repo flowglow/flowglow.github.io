@@ -1,0 +1,49 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="-0.001 0.001 1158.763 999.998" id="vimeo-logo">
+    <title>Layer 1</title>
+    <path d="M1158.195 231.332c-5.193 112.53-83.965 266.609-236.312 462.239C764.34 897.856 631.034 999.999 521.967 999.999c-67.519 0-124.648-62.324-171.393-186.973l-93.486-342.784c-34.625-124.648-71.847-186.973-111.665-186.973-8.656 0-38.953 18.178-90.891 54.534L-.001 267.688a14811.618 14811.618 0 0 0 168.795-150.617C244.968 51.284 302.099 16.66 340.186 13.197 430.21 4.541 485.609 66 506.384 197.573c22.506 141.961 38.087 230.254 46.742 264.879 25.969 117.724 54.534 176.586 85.696 176.586 24.237 0 60.594-38.087 109.068-114.261 48.475-76.175 74.443-134.171 77.905-173.989 6.925-65.787-19.043-98.68-77.905-98.68-27.7 0-56.266 6.06-85.696 18.178C719.325 85.044 828.393-4.98 989.398.214c119.455 3.463 175.721 80.503 168.795 231.12l.002-.002z"></path>
+  </symbol>
+  <symbol version="1.1" id="instagram-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 169.063 169.063">
+    <g>
+      <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+		c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+		c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+		c17.455,0,31.656,14.201,31.656,31.655V122.407z"></path>
+      <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+		C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+		c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"></path>
+      <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+		c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+		C135.661,29.421,132.821,28.251,129.921,28.251z"></path>
+    </g>
+  </symbol>
+  <symbol xmlnsDc="http://purl.org/dc/elements/1.1/" xmlnsCc="http://creativecommons.org/ns#" xmlnsRdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlnsSvg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="gmail-logo" xml:space="preserve" sodipodiDocname="gmail-logo.svg" inkscapeVersion="0.92.4 (5da689c313, 2019-01-14)" viewBox="0 0 169.063 169.063">
+    <metadata id="metadata15">
+      <rdf:RDF>
+        <cc:Work rdfAbout="">
+          <dc:format>image/svg+xml</dc:format>
+          <dc:type rdfResource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+        </cc:Work>
+      </rdf:RDF>
+    </metadata>
+    <defs id="defs13"></defs>
+    <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscapePageopacity="0" inkscapePageshadow="2" inkscapeWindowWidth="1920" inkscapeWindowHeight="1001" id="namedview11" showgrid="false" inkscapeZoom="0.295" inkscapeCx="-295.32812" inkscapeCy="-78.872943" inkscapeWindowX="-9" inkscapeWindowY="-9" inkscapeWindowMaximized="1" inkscapeCurrentLayer="Layer_1"></sodipodi:namedview>
+    <g id="g820">
+      <path inkscapeConnectorCurvature="0" id="path843" d="M 84.53125,0 C 37.908368,0 0,37.908368 0,84.53125 c 0,46.62288 37.908368,84.53125 84.53125,84.53125 46.62288,0 84.53125,-37.90837 84.53125,-84.53125 C 169.0625,37.908368 131.15413,0 84.53125,0 Z m 0,10.566406 c 40.91235,0 73.96484,33.052489 73.96484,73.964844 0,40.91235 -33.05249,73.96484 -73.96484,73.96484 -40.912355,0 -73.964844,-33.05249 -73.964844,-73.96484 0,-40.912355 33.052489,-73.964844 73.964844,-73.964844 z"></path>
+      <path id="path908" d="m 130.91298,50.723588 -90.6006,0.07141 H 25.519368 v 67.472062 h 14.793012 90.6006 14.79301 V 50.794994 H 130.91298 Z M 41.627819,51.554456 H 129.59754 L 85.612678,76.948991 Z M 40.31238,65.948338 84.23739,91.308614 40.31238,116.66848 Z m 90.6006,0 v 50.648732 h -0.10566 L 87.005715,91.3082 Z m -45.291221,26.159365 42.421351,24.491427 -84.958278,0.0676 z" inkscapeConnectorCurvature="0"></path>
+    </g>
+  </symbol>
+  <symbol xmlnsDc="http://purl.org/dc/elements/1.1/" xmlnsCc="http://creativecommons.org/ns#" xmlnsRdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlnsSvg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="linkedin-logo" sodipodiDocname="linkedin-logo.svg" inkscapeVersion="0.92.4 (5da689c313, 2019-01-14)" viewBox="0 0 72 72">
+    <metadata id="metadata14">
+      <rdf:RDF>
+        <cc:Work rdfAbout="">
+          <dc:format>image/svg+xml</dc:format>
+          <dc:type rdfResource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+        </cc:Work>
+      </rdf:RDF>
+    </metadata>
+    <defs id="defs12"></defs>
+    <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscapePageopacity="0" inkscapePageshadow="2" inkscapeWindowWidth="1920" inkscapeWindowHeight="1001" id="namedview10" showgrid="false" inkscapeZoom="4.6354778" inkscapeCx="52.465167" inkscapeCy="40.796776" inkscapeWindowX="-9" inkscapeWindowY="-9" inkscapeWindowMaximized="1" inkscapeCurrentLayer="svg8"></sodipodi:namedview>
+    <path d="M 8 0 C 3.581722 0 0 3.581722 0 8 L 0 64 C 0 68.418278 3.581722 72 8 72 L 64 72 C 68.418278 72 72 68.418278 72 64 L 72 8 C 72 3.581722 68.418278 0 64 0 L 8 0 z M 16.349609 10 C 19.856901 10 22.697266 12.863834 22.697266 16.396484 C 22.697266 19.929134 19.856901 22.794922 16.349609 22.794922 C 12.842317 22.794922 10 19.929134 10 16.396484 C 10 12.863834 12.842317 10 16.349609 10 z M 49.382812 26.273438 C 56.735937 26.273438 62 30.76404 62 40.050781 L 62 62 L 51.316406 62 L 51.316406 43.802734 C 51.316406 38.813373 49.419792 36.025391 45.470703 36.025391 C 41.174609 36.025391 38.929687 38.926729 38.929688 43.802734 L 38.929688 62 L 28.632812 62 L 28.632812 27.333984 L 38.929688 27.333984 L 38.929688 32.001953 C 38.929688 32.001953 42.026302 26.273438 49.382812 26.273438 z M 11.033203 27.333984 L 21.769531 27.333984 L 21.769531 62 L 11.033203 62 L 11.033203 27.333984 z " id="path2"></path>
+  </symbol>
+</svg>
