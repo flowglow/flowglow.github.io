@@ -30,10 +30,11 @@
         </div>
     </header>
     
-    <section class="reel-section" area-label="Vimeo video">
+    <section class="presentation-section" area-label="Presentation">
         <div class="container">
-            <h1>Here is my reel</h1>
-            <div class="vimeo-container">
+            <div id="lottie-animation" area-label="Logo lottie animation"></div>
+            <!-- <h1>Here is my reel</h1> -->
+            <div class="vimeo-container" area-label="Vimeo reel video">
                 <lite-vimeo videoid="470613149" style="background-image: url('https://i.vimeocdn.com/video/470613149.webp?mw=1600&mh=900&q=70');">
                     <div class="ltv-playbtn"></div>
                 </lite-vimeo>
@@ -72,9 +73,10 @@
         </small>
     </footer>
 
-    <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
     <script src="script.js"></script>
+    
     <!-- Include the custom element script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/lite-vimeo-embed/+esm"></script>
 </body>
 </html>
