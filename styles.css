@@ -124,6 +124,14 @@ body {
     text-align: center;
 }
 
+#lottie-animation {
+    width: calc(100vw - 40px);
+    max-width: 300px;
+    justify-content: center;
+    margin: 50px auto 0; /* Centered below the header */
+    margin-top: 100px;
+}
+
 .vimeo-container lite-vimeo {
     margin: var(--metric-box-spacing) auto;
     border-radius: 1em;
