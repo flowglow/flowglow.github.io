@@ -71,6 +71,7 @@ body {
 
 /* Set core body defaults */
 body {
+  font-family: Heebo, sans-serif;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -86,10 +87,6 @@ picture,
 svg {
   max-width: 100%;
   display: block;
-}
-
-body {
-  font-family: Heebo, sans-serif;
 }
 
 .container {
