@@ -1,103 +1,130 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://wanna-motion.com">
+    <title>Wanna-motion. Animation &amp; Design</title>
+    <meta name="description" content="Motion design studio specializing in 2D, frame-by-frame, and 3D animation. Building from an idea to illustrations and then to the final realization. Located in Paris, working worldwide.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wanna-motion.com">
+    <meta property="og:title" content="Wanna-motion. Animation &amp; Design">
+    <meta property="og:description" content="Motion design studio specializing in 2D, frame-by-frame, and 3D animation. Building from an idea to illustrations and then to the final realization. Located in Paris, working worldwide.">
+    <!-- <meta property="og:image" content="https://wanna-motion.com/src/og/1200-630.png?9">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630"> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Heebo"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-    <meta charset='UTF-8' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanna motion</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
-    <link rel='stylesheet' href='styles.css' />
-</head>
+  <body>
+    <!-- <header class="primary-header" style="display: none">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href=""><img src="" alt="Wanna Motion" /></a>
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <img
+              class="icon-hamburger"
+              src="src/img/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              class="icon-close"
+              src="src/img/icon-close.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul aria-label="Primary" role="list" class="nav-list">
+              <li><a href="">Projects</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header> -->
 
-<body>
-    <nav>
-        <ul class="nav-links">
-            <a href="#">Works</a>
-            <a href="./about/about.html">About</a>
-            <a href="#">Contact</a>
+    <section class="presentation-section" area-label="Presentation">
+      <div class="container">
+        <div class="lottie-container" area-label="Logo lottie animation">
+          <div id="lottie-animation"></div>
+        </div>
+        <!-- <h1>Here is my reel</h1> -->
+        <div class="vimeo-container" area-label="Vimeo reel video">
+          <lite-vimeo
+            videoid="470613149"
+            style="
+              background-image: url('https://i.vimeocdn.com/video/470613149.webp?mw=1600&mh=900&q=70');
+            "
+          >
+            <div class="ltv-playbtn"></div>
+          </lite-vimeo>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <ul class="social-list" role="list" area-label="Social links">
+          <li>
+            <a aria-label="vimeo" href="https://vimeo.com/darizhuravleva">
+              <svg class="social-icon">
+                <use xlink:href="src/img/social/social-icons.svg#vimeo-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="instagram"
+              href="https://www.instagram.com/wanna_motion/"
+            >
+              <svg class="social-icon">
+                <use xlink:href="src/img/social/social-icons.svg#instagram-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="linkedin"
+              href="https://www.linkedin.com/in/daria-zhuravleva-a3a132125/"
+            >
+              <svg class="social-icon">
+                <use xlink:href="src/img/social/social-icons.svg#linkedin-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a aria-label="gmail" href="mailto:zhuravleva.daria14@gmail.com">
+              <svg class="social-icon">
+                <use xlink:href="src/img/social/social-icons.svg#gmail-logo"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+      </div>
+      <small>
+        Site design / logo © 2024 Wanna Motion. All Rights Reserved.
+      </small>
+    </footer>
 
-    <div class="content">
-        
+    <!-- Include the custom element script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/lite-vimeo-embed/+esm"
+    ></script>
 
-        <div class="vimeo-group">
-            <div class="header">
-                Hi, I am Dashasha,<br />a
-                <span style="text-decoration: line-through;">cat mom</span>
-                <span style="color: #EA5857; "> Motion</span>
-                <span style="color: #F4B15D; ">Designer</span>
-            </div>
-            <img id="samsam03" src="src/img/samsam_03.png">
-            <img id="kiki06" src="src/img/kiki_06.png">
-            <div class="vimeo-container">
-                <div class='vimeo-wrapper'>
-                    <iframe src='https://player.vimeo.com/video/470613149' id="vimeo-reel" frameborder='0'
-                        webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                </div>
-            </div>
-        </div>
-
-        <section>
-            <h2>Featured Works</h2>
-            <div class="featured" id="jelly_fish">
-                <div class="featured-img">
-                    <img src="src/img/jelly_fish_small.png" alt="Jellyfish" />
-                </div>
-                <div class="featured-descr">
-                    <h3>Jellyfish animation</h3>
-                    <div class="tags">
-                        <div class="year-tag" data-value="2023">2023</div>
-                        <span class="software-tag">Procreate</span>
-                    </div>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit.</p>
-                    <p>Exercitation veniam consequat sunt nostrud amet.</p>
-                </div>
-            </div>
-            <div class="featured" id="abstract">
-                <div class="featured-img">
-                    <img src="src/img/abstract.png" alt="Abstract Composition" />
-                </div>
-                <div class="featured-descr">
-                    <h3>Abstract Composition and Cloth simulation</h3>
-                    <div class="tags">
-                        <div class="year-tag" data-value="2024">2024</div>
-                        <span class="software-tag">Blender</span>
-                    </div>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit.</p>
-                    <p>Exercitation veniam consequat sunt nostrud amet.</p>
-                </div>
-            </div>
-            <div class="featured" id="procreate">
-                <div class="featured-img">
-                    <img src="src/img/procreate.png" alt="Dreams" />
-                </div>
-                <div class="featured-descr">
-                    <h3>Dreams animation</h3>
-                    <div class="tags">
-                        <div class="year-tag" data-value="2024">2024</div>
-                        <span class="software-tag">Procreate Dreams</span>
-                    </div>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit.</p>
-                    <p>Exercitation veniam consequat sunt nostrud amet.</p>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script> -->
-
-</body>
-
+    <script src="scripts.js"></script>
+  </body>
 </html>

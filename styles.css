@@ -1,366 +1,268 @@
 /* SETTINGS */
 :root {
-    --color-off-white: #f3f4f4;
-    --metric-box-spacing: 1rem;
-    --max-image-width: 200px;
-    --max-container-width-desktop: 1000px;
-    --red-logo: #EC565A;
-    --orange-logo: #F4B15D;
-    --background-color: #FFFEFC;
+  --color-off-white: #f3f4f4;
+  --metric-box-spacing: 1rem;
+  --max-image-width: 200px;
+  --max-container-width-desktop: 800px;
+  --red-logo: #ec565a;
+  --orange-logo: #f4b15d;
+  --background-color: #fffefc;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-300: 0.8125rem;
+  --fs-400: 0.875rem;
+  --fs-500: 0.9375rem;
+  --fs-600: 1rem;
+  --fs-700: 1.875rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3.5rem;
+
+  --fs-body: var(--fs-400);
+  --fs-primary-heading: var(--fs-800);
+  --fs-secondary-heading: var(--fs-700);
+  --fs-nav: var(--fs-500);
+
+  --size-100: 0.25rem;
+  --size-200: 0.5rem;
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.5rem;
+  --size-600: 2rem;
+  --size-700: 3rem;
+  --size-800: 4rem;
+  --size-900: 5rem;
+}
+
+@media (min-width: 50em) {
+  :root {
+    --fs-body: var(--fs-500);
+    --fs-primary-heading: var(--fs-900);
+    --fs-secondary-heading: var(--fs-800);
+
+    --fs-nav: var(--fs-300);
+  }
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
 html,
 body {
-    overflow-x: hidden;
+  height: 100%;
 }
 
-.content {
-    max-width: var(--max-container-width-desktop);
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    object-fit: contain;
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
 }
 
 body {
-    max-width: 100%;
-    position: relative;
-    background-color: var(--background-color);
-    font-family: Heebo;
+  font-family: Heebo, sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container {
+  width: 92%;
+  max-width: var(--max-container-width-desktop);
+  margin: auto;
+  /* border: 2px solid red; */
 }
 
-p {
-    margin-block-start: var(--metric-box-spacing);
+@media only screen and (min-width: 50em) {
+  .container {
+    width: 100%;
+  }
 }
 
-h2 {
-    margin: var(--metric-box-spacing);
-    margin-bottom: 0px;
-    color: #21243D;
+.top-bar {
+  display: grid;
+  grid-auto-flow: column;
 }
 
-h3 {
-    color: #21243D;
+.top-bar > div {
+  justify-self: center;
 }
 
-nav {
-    /* background: #333; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: var(--red-logo);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.presentation-section {
+  padding: 1rem 0;
+  min-height: 80%;
 }
 
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-    text-transform: uppercase;
-    z-index: 10;
+.presentation-section h1 {
+  margin-top: 0;
+  text-align: center;
 }
 
-.nav-links a {
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--red-logo);
-    border-bottom: 2px solid transparent;
-    transition: 0.5s ease;
-    transform: translateX(0%);
+.lottie-container {
+  max-width: 200px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
-.nav-links a:hover {
-    color: var(--orange-logo);
-    letter-spacing: 5px;
+@media (max-width: 50em) {
+  .lottie-container {
+    max-width: 250px;
+    padding-bottom: 0rem;
+  }
 }
 
-.burger {
+.vimeo-container lite-vimeo {
+  margin: var(--metric-box-spacing) auto;
+  border-radius: 1em;
+}
+
+/* navigation */
+.primary-header {
+  padding-top: var(--size-700);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.nav-list {
+  font-size: var(--fs-nav);
+  display: flex;
+  gap: clamp(var(--size-400), 5vw, var(--size-700));
+  font-weight: var(--fw-semi-bold);
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--clr-primary-400);
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--clr-accent-400);
+}
+
+@media (max-width: 50em) {
+  .primary-navigation {
     display: none;
-    cursor: pointer;
-    z-index: 1;
+
+    position: fixed;
+    padding: var(--size-700);
+    inset: 7rem var(--size-400) auto;
+    max-width: 25rem;
     margin-left: auto;
-}
+    border-radius: var(--size-100);
+    box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
+    z-index: 10;
+  }
 
-.burger div {
-    width: 25px;
-    height: 3px;
-    background: var(--red-logo);
-    margin: 5px;
-    transition: all 0.5s ease;
-}
+  .primary-header[data-overlay]::before {
+    content: "";
+    background: var(--background-color);
+    inset: 0;
+  }
 
-.header {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: left;
-    margin: var(--metric-box-spacing);
-}
+  .nav-list {
+    display: grid;
+    gap: var(--size-400);
+    text-align: center;
+    font-weight: var(--fw-bold);
+  }
 
-.vimeo-group {
-    position: relative;
-    margin: var(--metric-box-spacing);
-    margin-right: 3rem;
-    margin-top: 15%;
-    margin-bottom: 10%;
-}
+  .primary-navigation[data-visible] {
+    display: block;
+  }
 
-.header {
-    flex-grow: 1;
-    position: absolute;
-    top: calc(-10% - var(--metric-box-spacing));
-    transform: translateY(-50%); 
-    left: 22%;
-}
-
-.vimeo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-}
-
-.vimeo-wrapper {
-    padding-bottom: 56.25%;
-    height: 0;
-    max-width: 100%;
-    overflow: hidden;
-
-    iframe {
-        margin: var(--metric-box-spacing);
-        border-radius: 20px;
-    }
-}
-
-.vimeo-wrapper iframe,
-.vimeo-wrapper object,
-.vimeo-wrapper embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* .vimeo-wrapper img {
-    border-radius: 20px;
-    border: 6px white solid;
-    width: 100%;
-} */
-
-#samsam03 {
-    position: absolute;
-    top: -30%;
-    left: 0;
-    height: 80%;
-    margin-left: 0%;
-    z-index: -10;
-}
-
-#kiki06 {
-    position: absolute;
-    top: -15%;
-    right: -10%;
-    height: 60%;
-    margin-right: -5%;
-    z-index: -10;
-}
-
-/* Featured section css */
-.featured {
-    /* background-color: var(--color-off-white); */
-    margin: var(--metric-box-spacing);
-    margin-top: 0px;
-    padding: var(--metric-box-spacing);
-    max-width: var(--max-container-width-desktop);
-    display: flex;
-    border-bottom: 1px solid #ccc;
+  .mobile-nav-toggle {
+    display: block;
     cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+
+  .mobile-nav-toggle .icon-close {
+    display: none;
+  }
 }
 
-.featured:hover {
-    background-color: lightgray;
+/* social list */
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--size-300);
+  margin-top: 1em;
 }
 
-.featured-img {
-    flex: 0 0 auto;
-    margin-right: var(--metric-box-spacing);
-    max-width: var(--max-image-width);
+.social-icon {
+  width: var(--size-500);
+  aspect-ratio: 1;
+  fill: darkslategray;
 }
 
-.featured-img img {
-    width: 100%;
-    height: auto;
+.social-list a:is(:hover, :focus) .social-icon {
+  fill: var(--red-logo);
 }
 
-.featured-descr {
-    flex: 1 1 auto;
+@media (min-width: 50em) {
+  .social-icon {
+    width: var(--size-400);
+  }
 }
 
-.tags {
-    display: flex;
-    align-items: center;
+footer {
+  text-align: center;
+  color: #656565;
+  margin-top: auto;
 }
 
-.year-tag {
-    color: white;
-    border-radius: 10px;
-    padding: 0.25rem 0.5rem;
-    margin-right: 0.5rem;
+footer > small {
+  padding: 0.5rem;
+  font-size: 0.7rem;
 }
 
-.year-tag[data-value='2022'] {
-    background-color: #142850;
-}
-
-.year-tag[data-value='2023'] {
-    background-color: var(--orange-logo);
-}
-
-.year-tag[data-value='2024'] {
-    background-color: var(--red-logo);
-}
-
-.software-tag {
-    color: gray;
-}
-
-@container (min-width: 30em) {
-    .featured {
-        flex-wrap: wrap;
-    }
-
-    .featured-img {
-        margin-bottom: 0;
-        /* Remove margin bottom */
-    }
-
-    .featured-descr {
-        flex: 1 1 40%;
-        /* Adjusted width for content */
-    }
-}
-
-@media (max-width: 30em) {
-    .featured {
-        flex-direction: column;
-    }
-
-    .featured-img {
-        margin-right: 0;
-        margin-bottom: var(--metric-box-spacing);
-        max-width: 100%;
-    }
-}
-
-@media only screen and (max-width: 760px) {
-    nav {
-        justify-content: space-between;
-        padding: 0 5vw;
-    }
-
-    .nav-links {
-        position: absolute;
-        right: 0;
-        top: 8vh;
-        min-height: 25vh;
-        background: var(--background-color);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 30%;
-        margin: 0;
-        padding: 0;
-        transform: translateX(100%);
-        transition: All 0.5s ease-in;
-    }
-
-    .nav-links a {
-        opacity: 0;
-
-    }
-
-    .burger {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    nav {
-        justify-content: space-between;
-        padding: 0 5vw;
-    }
-
-    .vimeo-group {
-        position: relative;
-        margin-left: 0;
-        margin-right: 2rem;
-        margin-top: 15%;
-        margin-bottom: 15%;
-    }
-
-    .header {
-        font-size: 1.5rem;
-        left: 5%; /* Position at the center */
-        bottom: auto; /* Reset bottom */
-    }
-
-    #samsam03 {
-        top: auto;
-        bottom: calc(-50% + var(--metric-box-spacing));
-        left: 50%;
-        transform: translateX(-50%);
-        height: 80%;
-        z-index: -10;
-    }
-}
-
-.nav-active {
-    transform: translateX(0);
-}
-
-@media only screen and (max-width: 460px) {
-    .nav-links {
-        width: 100%;
-        transition: All 0.5s ease;
-    }
-
-    .header {
-        left: 5%;
-        font-size: 1.2rem;
-    }
-}
-
-.nav-active {
-    transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+/* Utility classes */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
 }
